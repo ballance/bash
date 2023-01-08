@@ -13,3 +13,7 @@ txt2 = 'Sebastian is {age:.2f} years old.'
 age_in_years =  delta.days / decimal.Decimal('365')
 print(txt2.format(age = age_in_years))
 
+age_in_weeks_formatter = 'Sebastian is {age:.2f} weeks old.'
+age_in_weeks = delta.days / decimal.Decimal('12')
+print(age_in_weeks_formatter.format(age = age_in_weeks))
+
